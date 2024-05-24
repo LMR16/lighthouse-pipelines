@@ -1,0 +1,5 @@
+produto: "GASOLINA"
+preco:
+  minimo: 3
+  maximo: 5
+regioes: ["N", "S"]

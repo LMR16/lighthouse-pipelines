@@ -1,0 +1,13 @@
+---
+version: '2'
+services:
+  postgresql:
+    image: postgres
+    container_name: postgres
+    restart: always
+    volumes:
+      - ./database/data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - "54320:5432"
